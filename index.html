@@ -4,8 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel-Agency</title>
+
+    <!-- import des fichiers css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./css/boostrap_css/bootstrap.css">
+    <link rel="stylesheet" href="./css/boostrap_css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="./css/boostrap_css/mdb.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+
+    <!-- menu navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-teal">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i class="fa fa-plane-departure"></i> Travel Agency</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#travel-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="travel-navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">Recherche</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">Lieux touristiques</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">Galerie</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ <!-- Slider Section -->
+    <section>
+        <div class="carousel slide" id="travel-slider" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#travel-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#travel-slider" data-slide-to="1"></li>
+                <li data-target="#travel-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slider_one.jpg" alt="" class="img-fluid w-100">
+                    <div class="carousel-caption text-left animated zoomIn delay-1s">
+                        <h5 class="display-4">Ressentez la JOIE</h5>
+                        <p class="lead">
+                            Prenez une grande inspiration, pensez à quelque chose ou quelqu'un qui vous fait sourire,
+                             et laissez cette sensation réchauffer chaque parcelle de votre esprit. 
+                        </p>
+                        <button class="btn btn-teal">Lire plus</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider_two.jpg" alt="" class="img-fluid w-100">
+                    <div class="carousel-caption text-right animated zoomIn delay-1s">
+                        <h5 class="display-4">Destination ultime</h5>
+                        <p class="lead">
+                            Qu'il s'agisse d'un sommet enneigé, d'une plage isolée, d'une ville vibrante ou même d'un état d'esprit, 
+                             elle représente l'endroit où notre âme se sent pleinement vivante et connectée.
+                        </p>
+                        <button class="btn btn-teal">Lire plus</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider_three.jpg" alt="" class="img-fluid w-100">
+                    <div class="carousel-caption text-left animated zoomIn delay-1s">
+                        <h5 class="display-4">Détendez-vous dans la nature</h5>
+                        <p class="lead">
+                            La nature a ce don magique de recentrer et de revitaliser. Prenez un moment, détendez-vous, et laissez-vous
+                            porter par sa sérénité infinie.
+                        </p>
+                        <button class="btn btn-teal">Lire plus</button>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#travel-slider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédente</span>
+            </a>
+            <a class="carousel-control-next" href="#travel-slider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+     <!-- La section recherche -->
+     <section id="search" class="p-3 bg-teal text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="display-4">Rechercher votre destination</h5>
+                    <p class="lead">
+                        Rechercher un espace dans votre cœur où vos aspirations et vos rêves prennent vie
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <input type="search" class="form-control" placeholder="Côte d'Ivoire">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                            <i class="fa fa-location-arrow fa-4x text-teal"></i>
+                            <p class="h2">Emplacement choisi</p>
+                            <p>
+                                sélectionner l'endroit parfait qui correspond à vos désirs et besoins du moment.
+                                L’endroit qui vous attire spontanément est souvent le bon. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                            <i class="fa fa-building fa-4x text-teal"></i>
+                            <p class="h2">Shoping en voyage</p>
+                            <p>
+                                C'est un portail vers vos rêves d'évasion et d'aventure !
+                                C’est un endroit où chaque article raconte une histoire et inspire le voyageur en vous.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                            <i class="fa fa-plane-departure fa-4x text-teal"></i>
+                            <p class="h2">Tarifs avantageux</p>
+                            <p>
+                                prix compétitifs pour des billets d’avion, souvent accessibles grâce à une planification astucieuse ou à des 
+                                opportunités spéciales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<script src="./js/boostrap_js/bootstrap.js"></script>
+<script src="./js/boostrap_js/jquery.js"></script>
+<script src="./js/boostrap_js/mdb.js"></script>
+<script src="./js/boostrap_js/popper.min.js"></script>
+<script>
+    $('.carousel').carousel({
+        interval : 3000,
+        pause : 'hover'
+    });
+</script>
 </body>
 </html>
